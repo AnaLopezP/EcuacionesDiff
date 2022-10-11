@@ -10,12 +10,12 @@ def ecuacion2():
     y = sympy.Function('y')
 
     #Defino la función:
-    f = (y(x).diff(x))*sympy.sin(x) - (y(x)*sympy.log(y(x), sympy.e))
+    f = (y(x).diff(x))*sympy.sin(x) - (y(x)*sympy.log(y(x), sympy.exp))
     print(f)
     sympy.Eq(y(x).diff(x), f)
 
     #Condicion inicial:
-    ics = {y(sympy.py()/2): sympy.e}
+    ics = {y(sympy.pi()/2): sympy.exp}
 
     #resolver la ecuacion:
     sol = sympy.dsolve(f)
