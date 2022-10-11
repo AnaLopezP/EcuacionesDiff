@@ -6,3 +6,4 @@ if __name__ == "__main__":
     ecuacion1.ecuacion1()
     print("------------ECUACION 2-----------------")
     ecuacion2.ecuacion2()
+    print("------------ECUACION 3-----------------")        
