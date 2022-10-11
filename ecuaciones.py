@@ -11,3 +11,6 @@ y = sympy.Function('y')
 #Defino la función:
 f = (x**2*y-y)/(y+1)
 sympy.Eq(y(x).diff(x), f)
+
+#Condicion inicial:
+ics = {y(3): -1}
