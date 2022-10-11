@@ -19,6 +19,8 @@ def ecuacion1():
     ics = {y(3): -1}
 
     #resolver la ecuacion:
-    sol = sympy.dsolve(f)
+    solgen = sympy.dsolve(f)
+    f2 = sympy.Eq(solgen.lhs.subs(x, 0).subs(ics), solgen.rhs.subs(x, 0))
+    sol = sympy.solve(f2)
     print("-------------------------SOLUCIÓN--------------------------")
     print(sol)
