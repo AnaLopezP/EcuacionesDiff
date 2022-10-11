@@ -12,8 +12,10 @@ def ecuacion3():
     f = y(x).diff(x) - y(x)/(x-2) - 2*(x-2)**2
     print(f)
     sympy.Eq(y(x).diff(x), f)
-    
+
      #resolver la ecuacion:
     sol = sympy.dsolve(f)
     print("-------------------------SOLUCIÓN--------------------------")
     print(sol)
+
+ecuacion3()
