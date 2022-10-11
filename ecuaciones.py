@@ -1,6 +1,6 @@
 import matplotlib as plt
 import sympy
-from sympy import *
+
 
 '''Ecuacion 1:
  dy/dx = (x^2y-y)/(y+1)'''
@@ -12,11 +12,10 @@ y = sympy.Function('y')
 #Defino la función:
 f = y(x).diff(x) - ((x**2)*y(x) - y(x))/(y(x)+1)
 print(f)
-#f = ((x**2)*y-y)/(y+1)
-#sympy.Eq(y(x).diff(x), f)
+sympy.Eq(y(x).diff(x), f)
 
 #Condicion inicial:
-#ics = {y(3): -1}
+ics = {y(3): -1}
 
 #resolver la ecuacion:
-#sympy.dsolve(y(x).diff(x) - f)
+sympy.dsolve(y(x).diff(x) - f)
