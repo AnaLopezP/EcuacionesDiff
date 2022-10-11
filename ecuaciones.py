@@ -18,4 +18,4 @@ sympy.Eq(y(x).diff(x), f)
 ics = {y(3): -1}
 
 #resolver la ecuacion:
-sympy.dsolve(y(x).diff(x) - f)
+sympy.dsolve(f)
