@@ -19,4 +19,3 @@ def ecuacion4():
     print(sol)
 
 
-ecuacion4()

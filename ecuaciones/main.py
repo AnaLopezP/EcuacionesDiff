@@ -1,6 +1,7 @@
 import ecuacion1
 import ecuacion2
 import ecuacion3
+import ecuacion4
 
 if __name__ == "__main__":
     print("------------ECUACION 1-----------------")
@@ -9,3 +10,5 @@ if __name__ == "__main__":
     ecuacion2.ecuacion2()
     print("------------ECUACION 3-----------------")     
     ecuacion3.ecuacion3()   
+    print("------------ECUACION 4-----------------")
+    ecuacion4.ecuacion4()
