@@ -1,23 +1,19 @@
-import matplotlib as plt
 import sympy
 
-'''Ecuacion 2:
- y' senx= y Ln y'''
+'''Ecuacion 3:
+ dy/dx -y/(x-2) = 2(x-2)^2'''
 
-def ecuacion2():
+def ecuacion3():
 #Defino las incógnitas:
     x = sympy.symbols('x')
     y = sympy.Function('y')
 
     #Defino la función:
-    f = (y(x).diff(x))*sympy.sin(x) - (y(x)*sympy.log(y(x), sympy.exp(1)))
+    f = y(x).diff(x) - y(x)/(x-2) - 2*(x-2)**2
     print(f)
     sympy.Eq(y(x).diff(x), f)
-
-    #Condicion inicial:
-    ics = {y(sympy.pi/2): sympy.exp(1)}
-
-    #resolver la ecuacion:
+    
+     #resolver la ecuacion:
     sol = sympy.dsolve(f)
     print("-------------------------SOLUCIÓN--------------------------")
     print(sol)
