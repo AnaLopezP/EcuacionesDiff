@@ -18,4 +18,3 @@ def ecuacion3():
     print("-------------------------SOLUCIÓN--------------------------")
     print(sol)
 
-ecuacion3()
