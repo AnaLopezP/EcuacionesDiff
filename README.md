@@ -1,5 +1,5 @@
 # EcuacionesDiff
 
 Link del repositorio:
-[GitHub](https://github.com/AnaLopezP/EcuacionesDiff.com)
-https://github.com/AnaLopezP/EcuacionesDiff.com
+[GitHub](https://github.com/AnaLopezP/EcuacionesDiff)
+https://github.com/AnaLopezP/EcuacionesDiff
