@@ -8,3 +8,6 @@ import sympy
 x = sympy.symbols('x')
 y = sympy.Function('y')
 
+#Defino la función:
+f = (x**2*y-y)/(y+1)
+sympy.Eq(y(x).diff(x), f)
