@@ -15,7 +15,7 @@ def ecuacion2():
     sympy.Eq(y(x).diff(x), f)
 
     #Condicion inicial:
-    ics = {y(sympy.pi()/2): sympy.exp(1)}
+    ics = {y(sympy.pi/2): sympy.exp(1)}
 
     #resolver la ecuacion:
     sol = sympy.dsolve(f)
