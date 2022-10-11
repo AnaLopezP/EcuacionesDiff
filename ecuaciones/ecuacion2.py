@@ -1,6 +1,5 @@
 import matplotlib as plt
 import sympy
-import math
 
 '''Ecuacion 2:
  y' senx= y Ln y'''
@@ -11,12 +10,12 @@ def ecuacion2():
     y = sympy.Function('y')
 
     #Defino la función:
-    f = (y(x).diff(x))*math.sin(x) - (y(x)*math.log(y(x), math.e))
+    f = (y(x).diff(x))*sympy.sin(x) - (y(x)*sympy.log(y(x), sympy.e))
     print(f)
     sympy.Eq(y(x).diff(x), f)
 
     #Condicion inicial:
-    ics = {y(math.py()/2): math.e}
+    ics = {y(sympy.py()/2): sympy.e}
 
     #resolver la ecuacion:
     sol = sympy.dsolve(f)
