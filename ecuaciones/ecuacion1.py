@@ -15,12 +15,7 @@ def ecuacion1():
     print(f)
     sympy.Eq(y(x).diff(x), f)
 
-    #Condicion inicial:
-    ics = {y(3): -1}
-
     #resolver la ecuacion:
-    solgen = sympy.dsolve(f)
-    f2 = sympy.Eq(solgen.lhs.subs(x, 0).subs(ics), solgen.rhs.subs(x, 0))
-    sol = sympy.solve(f2)
+    sol = sympy.dsolve(f)
     print("-------------------------SOLUCIÓN--------------------------")
     print(sol)
