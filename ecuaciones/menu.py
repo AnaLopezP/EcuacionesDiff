@@ -2,9 +2,8 @@ import ecuacion1
 import ecuacion2
 import ecuacion3
 import ecuacion4
-import helpers
-import sympy
-import numpy as pd
+import ecuaciones.helpers as helpers
+
 
 def iniciar():
     while True:
