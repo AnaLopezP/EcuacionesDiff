@@ -2,8 +2,7 @@ import ecuacion1
 import ecuacion2
 import ecuacion3
 import ecuacion4
-import ecuaciones.helpers as helpers
-
+import helpers
 
 def iniciar():
     while True:
